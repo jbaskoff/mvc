@@ -9,9 +9,14 @@ error_reporting(E_ALL);
 
 // 2. Подключение файлов системы
 
-define('ROOT', dirname(__FILE__));
+//const ROOT = __DIR__;
+define('ROOT', __FILE__);
+
 require_once(ROOT.'/components/Router.php');
+
 echo 'root is: ' . ROOT . '<br>';
+
+echo 'dir  is: ' . __DIR__ . '<br>';
 // 3. Установка соединения с БД
 
 

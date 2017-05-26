@@ -7,8 +7,8 @@ class Router
 
 	public function __construct()
 	{
-		$routesPath = ROOT.'/config/routes.php';
-		$this->routes = include($routesPath);
+//		$routesPath = ROOT.'/config/routes.php';
+//		$this->routes = include($routesPath);
 	}
 
 // Return type
@@ -22,8 +22,7 @@ class Router
 
 	public function run()
 	{
-	    echo 'work';
-	    echo $_SERVER['REQUEST_URI'];
+	    echo 'method run from controller : ' . $_SERVER['REQUEST_URI'];
 //		$uri = $this->getURI();
 //
 //		foreach ($this->routes as $uriPattern => $path) {
